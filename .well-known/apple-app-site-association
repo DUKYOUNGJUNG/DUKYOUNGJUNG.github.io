@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["6PB48WA6C2.com.dm6637.MyGotGan"],
+        "components": [
+          {
+            "/": "/mygotgan/item/*",
+            "comment": "물건 상세 딥링크 — 내 곳간 앱으로 라우팅"
+          }
+        ]
+      }
+    ]
+  }
+}
