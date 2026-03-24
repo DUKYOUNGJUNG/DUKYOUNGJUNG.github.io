@@ -1,1 +1,149 @@
-222
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내 곳간 — 내 물건을 QR로 관리하세요</title>
+  <style>
+    :root {
+      --orange: #FF6B35;
+      --green: #4CAF50;
+      --bg: #F5F5F0;
+      --card: #FFFFFF;
+      --text-primary: #1A1A1A;
+      --text-secondary: #666666;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, 'Apple SD Gothic Neo', sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      min-height: 100vh;
+      display: flex; flex-direction: column; align-items: center;
+      padding: 48px 24px;
+    }
+    .icon {
+      width: 100px; height: 100px;
+      background: linear-gradient(135deg, var(--orange), var(--green));
+      border-radius: 22px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 48px;
+      box-shadow: 0 8px 24px rgba(255,107,53,0.3);
+      margin-bottom: 24px;
+    }
+    h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+    .subtitle {
+      font-size: 16px; color: var(--text-secondary);
+      text-align: center; line-height: 1.6; margin-bottom: 40px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 20px;
+      padding: 28px 24px;
+      width: 100%; max-width: 360px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
+    }
+    .card-title {
+      font-size: 14px; font-weight: 600;
+      color: var(--text-secondary);
+      text-transform: uppercase; letter-spacing: 0.05em;
+      margin-bottom: 16px;
+    }
+    .feature {
+      display: flex; align-items: flex-start;
+      gap: 12px; margin-bottom: 14px;
+    }
+    .feature:last-child { margin-bottom: 0; }
+    .feature-icon { font-size: 22px; width: 32px; flex-shrink: 0; text-align: center; margin-top: 1px; }
+    .feature-text { font-size: 15px; line-height: 1.5; }
+    .feature-text strong { display: block; font-weight: 600; margin-bottom: 2px; }
+    .feature-text span { color: var(--text-secondary); font-size: 13px; }
+    .download-btn {
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      background: var(--text-primary);
+      color: white; text-decoration: none;
+      padding: 16px 24px;
+      border-radius: 14px;
+      font-size: 16px; font-weight: 600;
+      width: 100%; max-width: 360px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+    .item-banner {
+      background: linear-gradient(135deg, var(--orange), #FF8C5A);
+      color: white; border-radius: 20px;
+      padding: 20px 24px;
+      width: 100%; max-width: 360px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 20px rgba(255,107,53,0.3);
+    }
+    .item-banner p { font-size: 14px; opacity: 0.85; margin-bottom: 4px; }
+    .item-banner strong { font-size: 18px; }
+    .footer { margin-top: 40px; font-size: 12px; color: var(--text-secondary); }
+  </style>
+</head>
+<body>
+
+  <div class="icon">🏠</div>
+  <h1>내 곳간</h1>
+  <p class="subtitle">
+    집 안 물건을 QR 코드로 등록하고<br>
+    어디에 뭐가 있는지 한눈에 파악하세요
+  </p>
+
+  <div class="item-banner" id="itemBanner" style="display:none;">
+    <p>📦 QR 코드로 공유된 물건</p>
+    <strong>앱을 설치하면 바로 확인할 수 있어요</strong>
+  </div>
+
+  <a class="download-btn" href="#">
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="white">
+      <path d="M11 2C6.03 2 2 6.03 2 11s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm-1 13V7l6 4-6 4z"/>
+    </svg>
+    App Store에서 무료 다운로드
+  </a>
+
+  <div class="card">
+    <div class="card-title">주요 기능</div>
+    <div class="feature">
+      <div class="feature-icon">📦</div>
+      <div class="feature-text">
+        <strong>물건 등록</strong>
+        <span>사진, 위치, 메모와 함께 물건을 기록해요</span>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">📍</div>
+      <div class="feature-text">
+        <strong>위치별 관리</strong>
+        <span>방, 창고, 서랍 등 보관 위치로 분류해요</span>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🔳</div>
+      <div class="feature-text">
+        <strong>QR 코드 생성</strong>
+        <span>물건마다 QR을 붙여두면 스캔만으로 바로 확인해요</span>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">⭐️</div>
+      <div class="feature-text">
+        <strong>즐겨찾기</strong>
+        <span>자주 찾는 물건을 빠르게 접근해요</span>
+      </div>
+    </div>
+  </div>
+
+  <p class="footer">© 내 곳간. iOS 전용 앱</p>
+
+  <script>
+    // /mygotgan/item/{uuid} 경로 접근 시 배너 표시
+    var path = window.location.pathname;
+    if (path.indexOf('/mygotgan/item/') === 0) {
+      document.getElementById('itemBanner').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
