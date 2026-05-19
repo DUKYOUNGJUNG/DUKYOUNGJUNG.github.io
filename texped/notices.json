@@ -5,12 +5,20 @@
   "appstore_url": "https://apps.apple.com/app/id6761684776",
   "notices": [
     {
+      "id": "2026-05-19-colosseum",
+      "title": "5월 19일 베타 빌드 업데이트",
+      "date": "2026-05-19",
+      "category": "patch",
+      "body_url": "2026-05-19-colosseum.html",
+      "important": true
+    },
+    {
       "id": "2026-05-18-inscription",
       "title": "5월 18일 베타 빌드 업데이트",
       "date": "2026-05-18",
       "category": "patch",
       "body_url": "2026-05-18-inscription.html",
-      "important": true
+      "important": false
     },
     {
       "id": "2026-05-15-balance",
