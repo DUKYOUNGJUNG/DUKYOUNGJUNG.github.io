@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>5월 19일 베타 빌드 업데이트</title>
+<link rel="stylesheet" href="notice.css">
+</head>
+<body>
+
+<h1>5월 19일 베타 빌드 업데이트</h1>
+<p class="subtitle">2026-05-19 · <span class="badge badge-patch">패치</span></p>
+
+<section>
+    <h2>콜로세움 스킬 시스템 전면 정비</h2>
+    <p>그동안 콜로세움(4회차)에서 일부 스킬이 사양과 다르게 동작하거나 아예 발동되지 않던 문제를 모두 잡았습니다.</p>
+    <ul>
+        <li><strong>피격 패시브 3종이 콜로세움에서 발동되지 않던 버그</strong>
+            <ul>
+                <li>몽크 — 불굴의 의지: 25% 확률로 받는 데미지 50% 감소</li>
+                <li>로그 — 연막: 20% 확률로 받는 데미지 50% 감소</li>
+                <li>매직유저 — 마법 방벽: 20% 확률로 받는 데미지 60% 감소</li>
+            </ul>
+        </li>
+        <li><strong>함정 설치 액티브 전환</strong> — 전투 시작 시 자동 도트였던 방식에서, 사용자가 직접 발동하는 액티브 스킬로 변경. MP 15, 3턴 동안 매 턴 ATK×0.25 자동 데미지</li>
+        <li><strong>마력 흡수 효과 반전 픽스</strong> — HP를 깎아 MP를 회복하는 역효과였던 문제를, 사양대로 "25% 확률로 MP 15 + HP 15% 회복"으로 정정</li>
+    </ul>
+    <div class="note">
+        로그/매직유저 빌드 다양성이 크게 늘어납니다. 그동안 콜로세움에서 사실상 무의미했던 패시브들이 이제 정상 동작합니다.
+    </div>
+</section>
+
+<section>
+    <h2>콜로세움 시각 표시 버그 픽스</h2>
+    <ul>
+        <li><strong>보스 데미지가 "생각중" 표시 전에 미리 노출되던 문제</strong> — 내 턴 종료 시점에 이미 피가 깎인 채로 보이던 현상</li>
+        <li><strong>기합/회복 스킬 사용 시 HP 바가 시각적으로 즉시 반영되지 않던 문제</strong></li>
+    </ul>
+</section>
+
+<section>
+    <h2>밸런스 조정</h2>
+    <ul>
+        <li><strong>90층 보스 너프</strong> — HP 배율 4.5x → 3.8x, DEF 배율 2.2x → 1.9x
+            <ul>
+                <li>누적 플레이 데이터상 90층 클리어율이 다른 층 대비 명확히 절벽이라 조정</li>
+                <li>90-100층 곡선 역전(90층이 100층보다 어려운 현상)도 함께 해소</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+</body>
+</html>
