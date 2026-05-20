@@ -84,10 +84,11 @@ function renderSlots(slots) {
         const item = document.createElement('div');
         item.className = 'reward-slot-item';
         item.dataset.slotId = slot.slotId;
+        const stonesNow = (slot.abyssStones != null) ? slot.abyssStones : '?';
         item.innerHTML =
-            '<div>' +
+            '<div style="flex:1">' +
                 '<div><strong>' + escapeHtml(slot.name || slot.slotId) + '</strong></div>' +
-                '<div class="slot-meta">' + escapeHtml(slot.playerClass) + '</div>' +
+                '<div class="slot-meta">' + escapeHtml(slot.playerClass) + ' · 심연석 ' + stonesNow + '개</div>' +
             '</div>';
         item.addEventListener('click', function() {
             selectedSlotId = slot.slotId;
@@ -139,7 +140,8 @@ btnEl.addEventListener('click', async function() {
         if (res.ok) {
             setStatus('심연석 ' + (res.stones || 0) + '개 지급 완료!', 'done');
             btnEl.textContent = '수령 완료';
-            slotListEl.innerHTML = '';
+            // 잠시 후 다시 조회해 갱신된 슬롯 상태 + claimed 표시 노출
+            setTimeout(refresh, 800);
         } else {
             const msg = ({
                 already_claimed: '이미 다른 슬롯에서 수령했습니다.',
