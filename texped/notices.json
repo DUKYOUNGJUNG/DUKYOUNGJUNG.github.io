@@ -5,6 +5,15 @@
   "appstore_url": "https://apps.apple.com/app/id6761684776",
   "notices": [
     {
+      "id": "test-debug-reward",
+      "title": "[DEBUG] 테스트 보상 — 심연석 50개",
+      "date": "2026-05-20",
+      "category": "event",
+      "body_url": "test-debug-reward.html",
+      "important": true,
+      "debug_only": true
+    },
+    {
       "id": "2026-05-19-colosseum",
       "title": "5월 19일 베타 빌드 업데이트",
       "date": "2026-05-19",
