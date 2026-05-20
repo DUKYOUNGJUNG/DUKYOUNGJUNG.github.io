@@ -25,6 +25,7 @@
         <div id="reward-slot-list" class="reward-slot-list"></div>
         <div id="reward-status"></div>
         <button id="reward-btn" class="reward-btn" disabled>받기</button>
+        <button id="reset-btn" class="reward-btn" style="background:#374151;margin-top:8px;">[DEBUG] 수령 기록 재설정</button>
     </div>
 </section>
 
@@ -131,6 +132,25 @@ async function refresh() {
         setStatus('앱 내 공지에서 열어주세요. (' + e.message + ')', 'error');
     }
 }
+
+const resetBtnEl = document.getElementById('reset-btn');
+resetBtnEl.addEventListener('click', async function() {
+    if (!confirm('수령 기록을 재설정합니다. (이미 지급된 심연석은 회수되지 않음)')) return;
+    resetBtnEl.disabled = true;
+    try {
+        const res = await bridgeCall('resetClaim', { rewardId: rewardId });
+        if (res.ok) {
+            setStatus('수령 기록을 재설정했습니다.', 'done');
+            setTimeout(refresh, 400);
+        } else {
+            setStatus('재설정 실패: ' + (res.error || 'unknown'), 'error');
+        }
+    } catch (e) {
+        setStatus('통신 오류: ' + e.message, 'error');
+    } finally {
+        resetBtnEl.disabled = false;
+    }
+});
 
 btnEl.addEventListener('click', async function() {
     if (!selectedSlotId) return;
