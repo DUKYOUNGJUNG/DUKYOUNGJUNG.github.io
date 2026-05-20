@@ -139,6 +139,95 @@ th {
     font-weight: 600;
 }
 
+/* 보상 카드 (인앱 공지 → 보상 지급용) */
+.reward-card {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.reward-card .reward-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #6d28d9;
+    margin: 0 0 4px;
+}
+
+.reward-card .reward-amount {
+    font-size: 14px;
+    color: #374151;
+    margin: 0 0 12px;
+}
+
+.reward-slot-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 12px 0;
+}
+
+.reward-slot-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border: 1px solid #d4d4d8;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #fff;
+}
+
+.reward-slot-item.selected {
+    border-color: #6d28d9;
+    background: #f3e8ff;
+}
+
+.reward-slot-item .slot-meta {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.reward-btn {
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    background: #6d28d9;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.reward-btn:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+
+.reward-status {
+    text-align: center;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.reward-status.done {
+    background: #d1fae5;
+    color: #047857;
+}
+
+.reward-status.error {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
 /* 다크 모드 */
 @media (prefers-color-scheme: dark) {
     html, body { background: #0c0d1a; color: #e5e7eb; }
@@ -156,4 +245,13 @@ th {
     .badge-notice { background: #374151; color: #e5e7eb; }
     th, td { border-color: #3f3f46; }
     th { background: #1f2030; color: #f3f4f6; }
+
+    .reward-card { background: #1f2030; border-color: #3f3f46; }
+    .reward-card .reward-title { color: #c084fc; }
+    .reward-card .reward-amount { color: #d1d5db; }
+    .reward-slot-item { background: #0c0d1a; border-color: #3f3f46; color: #e5e7eb; }
+    .reward-slot-item.selected { border-color: #c084fc; background: #2e1065; }
+    .reward-slot-item .slot-meta { color: #9ca3af; }
+    .reward-status.done { background: #064e3b; color: #6ee7b7; }
+    .reward-status.error { background: #7f1d1d; color: #fecaca; }
 }
