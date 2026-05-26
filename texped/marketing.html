@@ -48,22 +48,31 @@
     font-size: 14px;
     color: #374151;
 }
-.screenshot-placeholder {
-    background: #f4f4f5;
-    border: 1px dashed #d4d4d8;
-    border-radius: 10px;
-    padding: 40px 16px;
-    text-align: center;
-    color: #9ca3af;
-    font-size: 13px;
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     margin: 16px 0;
+}
+.screenshot-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    background: #f4f4f5;
+}
+@media (max-width: 480px) {
+    .screenshot-grid {
+        grid-template-columns: 1fr;
+    }
 }
 @media (prefers-color-scheme: dark) {
     .hero .tagline { color: #9ca3af; }
     .feature { background: #1f2030; border-color: #3f3f46; }
     .feature h3 { color: #c084fc; }
     .feature p { color: #d1d5db; }
-    .screenshot-placeholder { background: #1f2030; border-color: #3f3f46; color: #6b7280; }
+    .screenshot-grid img { background: #1f2030; border-color: #3f3f46; }
 }
 </style>
 </head>
@@ -108,7 +117,12 @@
 
 <section>
     <h2>스크린샷</h2>
-    <div class="screenshot-placeholder">스크린샷 자리 — 추후 추가 예정</div>
+    <div class="screenshot-grid">
+        <img src="screenshot01.png" alt="심연탐사 스크린샷 1" loading="lazy">
+        <img src="screenshot02.png" alt="심연탐사 스크린샷 2" loading="lazy">
+        <img src="screenshot03.png" alt="심연탐사 스크린샷 3" loading="lazy">
+        <img src="screenshot04.png" alt="심연탐사 스크린샷 4" loading="lazy">
+    </div>
 </section>
 
 <section>
