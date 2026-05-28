@@ -5,28 +5,12 @@
   "appstore_url": "https://apps.apple.com/app/id6761684776",
   "notices": [
     {
-      "id": "2026-05-19-colosseum",
-      "title": "5월 19일 베타 빌드 업데이트",
-      "date": "2026-05-19",
-      "category": "patch",
-      "body_url": "2026-05-19-colosseum.html",
+      "id": "2026-05-29-release",
+      "title": "심연탐사 1.0 정식 출시",
+      "date": "2026-05-29",
+      "category": "notice",
+      "body_url": "2026-05-29-release.html",
       "important": true
-    },
-    {
-      "id": "2026-05-18-inscription",
-      "title": "5월 18일 베타 빌드 업데이트",
-      "date": "2026-05-18",
-      "category": "patch",
-      "body_url": "2026-05-18-inscription.html",
-      "important": false
-    },
-    {
-      "id": "2026-05-15-balance",
-      "title": "5월 14일 베타 빌드 업데이트",
-      "date": "2026-05-15",
-      "category": "patch",
-      "body_url": "2026-05-15-balance.html",
-      "important": false
     }
   ]
 }
