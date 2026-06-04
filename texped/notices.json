@@ -1,9 +1,17 @@
 {
   "version": 1,
-  "latest_version": "1.0.0",
+  "latest_version": "1.0.1",
   "force_update": false,
   "appstore_url": "https://apps.apple.com/app/id6761684776",
   "notices": [
+    {
+      "id": "2026-06-05-update",
+      "title": "1.0.1 업데이트",
+      "date": "2026-06-05",
+      "category": "patch",
+      "body_url": "2026-06-05-update.html",
+      "important": false
+    },
     {
       "id": "2026-05-29-release",
       "title": "심연탐사 1.0 정식 출시",
