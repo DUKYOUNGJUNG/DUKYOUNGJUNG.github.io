@@ -4,5 +4,14 @@
   "force_update": false,
   "appstore_url": "https://apps.apple.com/us/app/id6768542688",
   "feedback_url": "https://docs.google.com/forms/d/e/1FAIpQLSc3yFBdjVHMULD88up6-cjvIWR7M4u27_3CwY90rZwyrRhpUA/viewform",
-  "notices": []
+  "notices": [
+    {
+      "id": "2026-06-10-beta-update",
+      "title": "베타 업데이트 안내 — 프로젝트·노드 색·범례 등",
+      "date": "2026-06-10",
+      "category": "notice",
+      "body_url": "2026-06-10-beta-update.html",
+      "important": true
+    }
+  ]
 }
