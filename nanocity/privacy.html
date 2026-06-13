@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>나노씨티 — 개인정보 처리방침</title>
+<link rel="stylesheet" href="notice.css">
+</head>
+<body>
+
+<h1>개인정보 처리방침</h1>
+<p class="subtitle">최종 갱신 2026-06-13</p>
+
+<section>
+    <p>나노씨티(이하 "본 앱")는 사용자의 개인정보를 소중히 다루며 관련 법령을 준수합니다. 본 앱은 별도의 계정이나 자체 서버를 두지 않으며, 게임 데이터는 기본적으로 사용자 기기에 저장됩니다. 본 처리방침은 본 앱이 다루는 정보의 범위와 목적을 안내합니다.</p>
+</section>
+
+<section>
+    <h2>1. 수집하는 정보</h2>
+    <ul>
+        <li><strong>게임 데이터(기기 내 저장)</strong>: 마을 구성, 진행 상황, 설정 등은 사용자 기기 내부(및 위젯과 공유되는 App Group 컨테이너)에 저장됩니다. 계정이나 자체 서버가 없으며, 앱을 삭제하면 함께 삭제됩니다.</li>
+        <li><strong>익명 사용 통계 · 충돌 데이터</strong>: 세션·이벤트·충돌 정보를 Firebase Analytics를 통해 수집합니다. 정식 출시(Release) 빌드에서만 수집되며 개발 중에는 비활성화됩니다. 개인 식별 정보, 광고 식별자(IDFA)를 수집하지 않으며 App Tracking Transparency 권한도 요청하지 않습니다.</li>
+        <li><strong>걸음 수(HealthKit)</strong>: "걸음수 아저씨" 응원 표시를 위해 하루 걸음 수를 <strong>읽기 전용</strong>으로만 사용합니다. 걸음 데이터는 기기 안에서만 사용되며, 기기 밖이나 어떤 서버로도 전송되지 않습니다.</li>
+        <li><strong>위치</strong>: 현재 위치는 오직 날씨 정보를 받아오기 위해 사용됩니다(날씨는 나노씨티 플러스 구독 기능). 아래에 설명한 날씨 요청 외에는 저장·공유되지 않습니다.</li>
+        <li><strong>미리 알림(Reminders)</strong>: 선택적 할 일 보드에 오늘의 미리 알림 <strong>개수</strong>만 표시하기 위해 읽기 전용으로 접근합니다. 미리 알림의 내용은 수집·전송되지 않습니다.</li>
+        <li><strong>사진 보관함</strong>: 받은 천문/동물 이미지를 사용자가 직접 저장할 때만 쓰이는 <strong>추가 전용(add-only)</strong> 접근입니다.</li>
+        <li><strong>인앱 구매 정보</strong>: 나노씨티 플러스 구독 결제는 Apple이 처리합니다. 본 앱은 결제·카드 정보를 수집하거나 저장하지 않습니다.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>2. 이용 목적</h2>
+    <ul>
+        <li>기기 내 게임 진행 상황 저장 및 위젯 표시</li>
+        <li>충돌·버그 진단 및 콘텐츠 개선(익명 통계)</li>
+        <li>현재 위치 기반 지역 날씨·대기질 표시(구독 기능)</li>
+        <li>걸음 수 응원, 미리 알림 개수 표시 등 마을 연출</li>
+        <li>인앱 구매(구독) 처리 — Apple을 통해 진행</li>
+    </ul>
+</section>
+
+<section>
+    <h2>3. 보관 및 파기</h2>
+    <ul>
+        <li>게임 데이터는 사용자 기기(및 위젯과 공유되는 App Group 컨테이너)에 저장되며, 앱을 삭제하면 즉시 함께 파기됩니다.</li>
+        <li>Firebase Analytics로 전송되는 익명 이벤트 데이터는 Google Cloud의 표준 보관 정책에 따라 보관됩니다.</li>
+        <li>걸음 수·미리 알림·위치 데이터는 기기 안에서 사용되며 별도로 저장하지 않습니다.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>4. 제3자 제공 및 위탁</h2>
+    <p>본 앱은 사용자의 개인정보를 제3자에게 판매·임대하지 않습니다. 기능 제공을 위해 다음 서비스가 사용됩니다.</p>
+    <ul>
+        <li><strong>Firebase Analytics (Google LLC)</strong> — 익명 사용 통계 및 충돌 데이터 수집·분석</li>
+        <li><strong>Apple WeatherKit (Apple Inc.)</strong> — 날씨 데이터 제공. 지역 날씨를 받기 위해 위치가 Apple에 전송되며, Apple의 개인정보 정책을 따릅니다.</li>
+        <li><strong>Open-Meteo (open-meteo.com)</strong> — 대기질 데이터를 받기 위해 대략적인 좌표가 전송됩니다. 개인 식별 정보는 전송되지 않습니다.</li>
+        <li><strong>외부 이미지 소스</strong> — NASA 오늘의 천문 사진(APOD) 및 동물 이미지 API에서 공개 이미지를 내려받습니다. 개인정보는 전송되지 않습니다.</li>
+        <li><strong>Apple Inc.</strong> — 인앱 구매(구독) 처리 및 App Store 배포</li>
+    </ul>
+</section>
+
+<section>
+    <h2>5. 사용자 권리</h2>
+    <ul>
+        <li>기기 내 데이터 삭제 — 앱을 삭제하면 저장된 모든 게임 데이터가 즉시 제거됩니다.</li>
+        <li>권한 관리 — 건강, 위치, 미리 알림, 사진 권한은 iOS 설정에서 언제든지 변경할 수 있습니다. 권한을 끄면 해당 기능에 데이터가 사용되지 않습니다.</li>
+        <li>인앱 구매 환불 — Apple App Store 정책에 따라 신청 (<a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a>).</li>
+    </ul>
+</section>
+
+<section>
+    <h2>6. 미성년자 보호</h2>
+    <p>본 앱은 아동의 개인정보를 의도적으로 수집하지 않습니다. 본 앱이 수집하는 데이터는 모두 익명이며 개인 식별 정보를 포함하지 않습니다.</p>
+</section>
+
+<section>
+    <h2>7. 처리방침 변경</h2>
+    <p>본 처리방침은 법령 또는 서비스 변경에 따라 수정될 수 있으며, 변경 시 본 페이지에 갱신일자와 함께 공지됩니다.</p>
+</section>
+
+<section>
+    <h2>8. 연락처</h2>
+    <p>개인정보 관련 문의는 아래로 연락주세요.</p>
+    <p><strong>이메일</strong>: <a href="mailto:dm6637@gmail.com">dm6637@gmail.com</a></p>
+</section>
+
+<hr>
+
+<h1>Privacy Policy</h1>
+<p class="subtitle">Last updated 2026-06-13</p>
+
+<section>
+    <p>NanoCity ("the App") respects your privacy and complies with applicable laws. The App has no user accounts and no custom server; game data is stored on your device by default. This policy explains what information the App handles and why.</p>
+</section>
+
+<section>
+    <h2>1. Information We Handle</h2>
+    <ul>
+        <li><strong>Game data (stored on-device)</strong>: Your town layout, progress, and settings are stored on your device (and in an App Group container shared with the widget). There is no account and no custom server; this data is deleted when you delete the App.</li>
+        <li><strong>Anonymous usage &amp; crash data</strong>: Session, event, and crash information collected via Firebase Analytics. Collected only in Release builds (disabled during development). No personal identifiers, no advertising ID (IDFA), and no App Tracking Transparency prompt.</li>
+        <li><strong>Step count (HealthKit)</strong>: Read-only, used solely to show a daily step cheer ("걸음수 아저씨") in the town and widget. Step data is read on-device and is never transmitted off the device or to any server.</li>
+        <li><strong>Location</strong>: Used only to fetch local weather (a NanoCity Plus subscriber feature). Your current location is used on-device to request weather and is not stored or shared beyond the weather requests described below.</li>
+        <li><strong>Reminders</strong>: Read-only access to show today's reminder count on the optional to-do board. Reminder contents are not collected or transmitted.</li>
+        <li><strong>Photo Library</strong>: Add-only access, used only to save received astronomy/animal images when you choose to.</li>
+        <li><strong>In-app purchase</strong>: The NanoCity Plus subscription is processed by Apple. The App does not collect or store payment or card information.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>2. How We Use Information</h2>
+    <ul>
+        <li>Saving on-device game progress and displaying it in the widget</li>
+        <li>Diagnosing crashes/bugs and improving content (anonymous statistics)</li>
+        <li>Showing local weather and air quality based on your current location (subscriber feature)</li>
+        <li>Town features such as step cheers and reminder counts</li>
+        <li>Processing in-app purchases (subscription) via Apple</li>
+    </ul>
+</section>
+
+<section>
+    <h2>3. Storage &amp; Deletion</h2>
+    <ul>
+        <li>Game data is stored on your device (and the App Group container shared with the widget) and is deleted immediately when you delete the App.</li>
+        <li>Anonymous event data sent to Firebase Analytics is retained per Google Cloud's standard retention policy.</li>
+        <li>Step, reminder, and location data are used on-device and are not separately stored by the App.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>4. Third Parties &amp; Processors</h2>
+    <p>We do not sell or rent your personal information. The following services are used to provide features:</p>
+    <ul>
+        <li><strong>Firebase Analytics (Google LLC)</strong> — anonymous usage statistics and crash data.</li>
+        <li><strong>Apple WeatherKit (Apple Inc.)</strong> — weather data provided by Apple; your location is sent to Apple to return local weather, per Apple's privacy terms.</li>
+        <li><strong>Open-Meteo (open-meteo.com)</strong> — approximate coordinates are sent to fetch air-quality data. No personal identifiers are sent.</li>
+        <li><strong>External image sources</strong> — public images are downloaded from NASA's Astronomy Picture of the Day (APOD) and an animal image API. No personal data is sent.</li>
+        <li><strong>Apple Inc.</strong> — in-app purchase (subscription) processing and App Store distribution.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>5. Your Rights</h2>
+    <ul>
+        <li>Delete on-device data — deleting the App removes all stored game data immediately.</li>
+        <li>Manage permissions — Health, Location, Reminders, and Photos permissions can be changed anytime in iOS Settings. Turning a permission off stops the App from using that data.</li>
+        <li>In-app purchase refunds — request via Apple App Store policy (<a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a>).</li>
+    </ul>
+</section>
+
+<section>
+    <h2>6. Children</h2>
+    <p>The App does not knowingly collect personal information from children. All data the App collects is anonymous and contains no personal identifiers.</p>
+</section>
+
+<section>
+    <h2>7. Changes</h2>
+    <p>This policy may be updated to reflect legal or service changes. Updates will be posted on this page with a revised date.</p>
+</section>
+
+<section>
+    <h2>8. Contact</h2>
+    <p><strong>Email</strong>: <a href="mailto:dm6637@gmail.com">dm6637@gmail.com</a></p>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+/* 나노씨티 공지 스타일 — 따뜻하고 아늑한 테마 */
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    color: #4A3B2A;
+    background: #FFF9F0;
+    word-break: keep-all;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    padding: 16px 16px 80px;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 6px;
+    color: #E07A2E;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #9A8C73;
+    margin: 0 0 24px;
+}
+
+section {
+    margin-bottom: 28px;
+}
+
+section h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #F2C99A;
+    color: #E07A2E;
+}
+
+section h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 18px 0 6px;
+    color: #5C4A33;
+}
+
+p {
+    margin: 8px 0;
+}
+
+ul, ol {
+    margin: 8px 0;
+    padding-left: 22px;
+}
+
+li {
+    margin: 4px 0;
+}
+
+li strong {
+    color: #E07A2E;
+}
+
+code {
+    background: #FBEFE0;
+    color: #E07A2E;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.92em;
+    font-family: "SF Mono", Menlo, monospace;
+}
+
+.note {
+    background: #FFF3E2;
+    border-left: 4px solid #E07A2E;
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+.warning {
+    background: #FCEFD0;
+    border-left: 4px solid #D9930B;
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+.tip {
+    background: #E7F3DC;
+    border-left: 4px solid #6FA84A;
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+.badge-patch { background: #FFE3C2; color: #C2410C; }
+.badge-event { background: #FFE3B0; color: #B45309; }
+.badge-notice { background: #ECE3D5; color: #6B5B45; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #E8D9C2;
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #FBEFE0;
+    font-weight: 600;
+}
+
+/* 다크 모드 — 따뜻한 어둠 */
+@media (prefers-color-scheme: dark) {
+    html, body { background: #1E1A14; color: #E8DECF; }
+    h1 { color: #F2A65A; }
+    .subtitle { color: #B8A789; }
+    section h2 { color: #F2A65A; border-bottom-color: #7A5C36; }
+    section h3 { color: #F0E6D6; }
+    li strong { color: #F2A65A; }
+    code { background: #2C261C; color: #F2A65A; }
+    .note { background: #2E2416; border-left-color: #F2A65A; }
+    .warning { background: #3A2C10; border-left-color: #D9930B; }
+    .tip { background: #213017; border-left-color: #6FA84A; }
+    .badge-patch { background: #6B3410; color: #FFE3C2; }
+    .badge-event { background: #5C3A0A; color: #FFE3B0; }
+    .badge-notice { background: #3A332A; color: #E8DECF; }
+    th, td { border-color: #3F382C; }
+    th { background: #2C261C; color: #F0E6D6; }
+}
