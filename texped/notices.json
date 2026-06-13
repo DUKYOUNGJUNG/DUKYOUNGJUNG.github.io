@@ -1,16 +1,24 @@
 {
   "version": 1,
-  "latest_version": "1.0.2",
+  "latest_version": "1.0.3",
   "force_update": false,
   "appstore_url": "https://apps.apple.com/app/id6761684776",
   "notices": [
+    {
+      "id": "2026-06-13-update",
+      "title": "1.0.3 업데이트",
+      "date": "2026-06-13",
+      "category": "patch",
+      "body_url": "2026-06-13-update.html",
+      "important": true
+    },
     {
       "id": "2026-06-08-update",
       "title": "1.0.2 업데이트",
       "date": "2026-06-08",
       "category": "patch",
       "body_url": "2026-06-08-update.html",
-      "important": true
+      "important": false
     },
     {
       "id": "2026-06-05-update",
