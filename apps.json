@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "updated": "2026-06-15",
+  "apps": [
+    {
+      "id": "simyeontamsa",
+      "name": "심연탐사",
+      "tagline": "봉인된 심연을 탐사하는 텍스트 던전 RPG",
+      "appStoreUrl": "https://apps.apple.com/app/id6761684776",
+      "appStoreId": "6761684776",
+      "urlScheme": "simyeontamsa",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/49/23/2f/49232fee-8dca-0b51-9871-f2629c706e6e/AppIcon-1x_U007ephone-0-1-sRGB-85-220-0.png/512x512bb.jpg"
+    },
+    {
+      "id": "drawingdiary",
+      "name": "꼬마일기",
+      "tagline": "아이들이 그림으로 쓰는 일기",
+      "appStoreUrl": "https://apps.apple.com/app/id6762070835",
+      "appStoreId": "6762070835",
+      "urlScheme": "drawingdiary",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8d/ca/94/8dca94b6-7d64-3794-4dae-6dcb44ff6fb7/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg"
+    },
+    {
+      "id": "hanjjok",
+      "name": "한쪽",
+      "tagline": "홈 화면 위젯으로 한 쪽씩 읽는 소설",
+      "appStoreUrl": "https://apps.apple.com/app/id6754595777",
+      "appStoreId": "6754595777",
+      "urlScheme": "hanjjok",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3f/10/c4/3f10c4a2-1ca0-a70c-b72b-287ce155874f/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg"
+    },
+    {
+      "id": "mygotgan",
+      "name": "내 곳간",
+      "tagline": "QR로 내 물건을 정리하는 곳간",
+      "appStoreUrl": "https://apps.apple.com/app/id6760105312",
+      "appStoreId": "6760105312",
+      "urlScheme": "gotgan",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fa/32/bc/fa32bc49-cd12-2472-d3db-2eb64dedbe56/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg"
+    },
+    {
+      "id": "truespend",
+      "name": "소비노트",
+      "tagline": "말하듯 적으면 AI가 정리하는 가계부",
+      "appStoreUrl": "https://apps.apple.com/app/id6747823931",
+      "appStoreId": "6747823931",
+      "urlScheme": "truespend",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c8/7e/2a/c87e2a71-1469-8b5e-6a65-7aded84c6f9c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg"
+    }
+  ]
+}
