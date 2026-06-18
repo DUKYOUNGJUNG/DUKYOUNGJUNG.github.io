@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-06-15",
+  "updated": "2026-06-18",
   "apps": [
     {
       "id": "simyeontamsa",
@@ -46,6 +46,15 @@
       "appStoreId": "6747823931",
       "urlScheme": "truespend",
       "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c8/7e/2a/c87e2a71-1469-8b5e-6a65-7aded84c6f9c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg"
+    },
+    {
+      "id": "duruli",
+      "name": "두루리",
+      "tagline": "장면을 적으면 AI가 노드 그래프로 엮는 이야기 정리",
+      "appStoreUrl": "https://apps.apple.com/app/id6768542688",
+      "appStoreId": "6768542688",
+      "urlScheme": null,
+      "iconUrl": null
     }
   ]
 }
