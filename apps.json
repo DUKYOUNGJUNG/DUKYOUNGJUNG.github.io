@@ -55,6 +55,15 @@
       "appStoreId": "6768542688",
       "urlScheme": null,
       "iconUrl": null
+    },
+    {
+      "id": "nanocity",
+      "name": "나노씨티",
+      "tagline": "홈 화면에서 자라는 작은 섬 마을",
+      "appStoreUrl": "https://apps.apple.com/app/id6776623002",
+      "appStoreId": "6776623002",
+      "urlScheme": "nanocity",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a6/f4/b5/a6f4b51c-7441-9126-fc1c-2aea2bd165f3/AppIcon-1x_U007ephone-0-1-85-220-0.png/512x512bb.jpg"
     }
   ]
 }
