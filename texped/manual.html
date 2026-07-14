@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>심연탐사 도움말</title>
+<link rel="stylesheet" href="manual.css">
+</head>
+<body>
+
+<h1>심연탐사 도움말</h1>
+<p class="subtitle">게임 메카닉과 시스템 안내</p>
+
+<nav class="toc">
+    <h2>목차</h2>
+    <ol>
+        <li><a href="#equipment">장비 옵션</a></li>
+        <li><a href="#combat">전투 시스템</a></li>
+        <li><a href="#village">마을 / 시설</a></li>
+        <li><a href="#exploration">탐사 / 캠핑</a></li>
+        <li><a href="#misc">기타 시스템</a></li>
+    </ol>
+</nav>
+
+<!-- ============================================
+     1. 장비 옵션
+============================================ -->
+<section id="equipment">
+    <h2>1. 장비 옵션</h2>
+
+    <h3>장비 등급</h3>
+    <p>장비는 5단계 희귀도로 구분됩니다. 등급이 높을수록 접두사/접미사 옵션이 붙을 확률이 높습니다.</p>
+    <table>
+        <thead><tr><th>등급</th><th>색상</th><th>옵션 규칙</th></tr></thead>
+        <tbody>
+            <tr><td class="r-common">일반</td><td>회색</td><td>접두사/접미사 없음</td></tr>
+            <tr><td class="r-uncommon">고급</td><td>녹색</td><td>접두사 50% / 접미사 50% (서로 독립)</td></tr>
+            <tr><td class="r-rare">희귀</td><td>파랑</td><td>접두사 + 접미사 둘 다 항상 붙음</td></tr>
+            <tr><td class="r-epic">영웅</td><td>보라</td><td>접두사 + 접미사 둘 다 항상 붙음 (수치 상승)</td></tr>
+            <tr><td class="r-legendary">전설</td><td>주황</td><td>고유 전설 효과 보유</td></tr>
+        </tbody>
+    </table>
+
+    <h3>기본 스탯</h3>
+    <p>장비가 캐릭터에 더해주는 기본 수치입니다.</p>
+    <table>
+        <thead><tr><th>스탯</th><th>의미</th><th>역할</th></tr></thead>
+        <tbody>
+            <tr><td><strong>ATK</strong></td><td>공격력</td><td>적에게 입히는 기본 피해량</td></tr>
+            <tr><td><strong>DEF</strong></td><td>방어력</td><td>받는 피해 감소</td></tr>
+            <tr><td><strong>HIT</strong></td><td>명중</td><td>공격 적중률에 기여 (적의 회피와 대비)</td></tr>
+            <tr><td><strong>HP</strong></td><td>최대 체력</td><td>0이 되면 사망</td></tr>
+            <tr><td><strong>MP</strong></td><td>최대 마나</td><td>스킬 발동에 사용</td></tr>
+        </tbody>
+    </table>
+
+    <h3>접두사 / 접미사 옵션</h3>
+    <p>장비명의 접두사는 기본 스탯(ATK/DEF/HP)을 올리고, 접미사는 특수 효과를 부여합니다. 단어가 강할수록 수치가 큽니다.</p>
+
+    <h4>접두사 — ATK 강화</h4>
+    <table>
+        <thead><tr><th>접두사</th><th>ATK 보너스</th></tr></thead>
+        <tbody>
+            <tr><td>쥐의</td><td>+1</td></tr>
+            <tr><td>토끼의</td><td>+2</td></tr>
+            <tr><td>여우의</td><td>+3</td></tr>
+            <tr><td>표범의</td><td>+5</td></tr>
+            <tr><td>곰의</td><td>+7</td></tr>
+            <tr><td>늑대의</td><td>+10</td></tr>
+            <tr><td>호랑이의</td><td>+14</td></tr>
+        </tbody>
+    </table>
+
+    <h4>접두사 — DEF 강화</h4>
+    <table>
+        <thead><tr><th>접두사</th><th>DEF 보너스</th></tr></thead>
+        <tbody>
+            <tr><td>소라의</td><td>+1</td></tr>
+            <tr><td>조개의</td><td>+2</td></tr>
+            <tr><td>게의</td><td>+3</td></tr>
+            <tr><td>가재의</td><td>+4</td></tr>
+            <tr><td>달팽이의</td><td>+6</td></tr>
+            <tr><td>거북의</td><td>+8</td></tr>
+            <tr><td>아르마딜로의</td><td>+12</td></tr>
+        </tbody>
+    </table>
+
+    <h4>접두사 — HP 강화</h4>
+    <table>
+        <thead><tr><th>접두사</th><th>HP 보너스</th></tr></thead>
+        <tbody>
+            <tr><td>멸치의</td><td>+5</td></tr>
+            <tr><td>새우의</td><td>+10</td></tr>
+            <tr><td>연어의</td><td>+15</td></tr>
+            <tr><td>상어의</td><td>+25</td></tr>
+            <tr><td>돌고래의</td><td>+35</td></tr>
+            <tr><td>다랑어의</td><td>+50</td></tr>
+            <tr><td>고래의</td><td>+70</td></tr>
+        </tbody>
+    </table>
+
+    <h4>접미사 — 생명력 흡수 (♥)</h4>
+    <p>입힌 피해의 일부를 자신 HP로 회복. 여러 장비 합산 가능 (상한 30%).</p>
+    <table>
+        <thead><tr><th>접미사</th><th>흡혈량</th></tr></thead>
+        <tbody>
+            <tr><td>거머리의</td><td>3%</td></tr>
+            <tr><td>모기의</td><td>5%</td></tr>
+            <tr><td>박쥐의</td><td>10%</td></tr>
+            <tr><td>드라큘라의</td><td>15%</td></tr>
+        </tbody>
+    </table>
+
+    <h4>접미사 — 방어 무시 (♠)</h4>
+    <p>적 방어력을 일정 수치만큼 차감하고 피해 계산. 고방어 보스 상대에 효과적.</p>
+    <table>
+        <thead><tr><th>접미사</th><th>방어 무시</th></tr></thead>
+        <tbody>
+            <tr><td>잡초의</td><td>5</td></tr>
+            <tr><td>가시나무의</td><td>10</td></tr>
+            <tr><td>가시덩굴의</td><td>18</td></tr>
+            <tr><td>선인장의</td><td>25</td></tr>
+        </tbody>
+    </table>
+
+    <h4>접미사 — 명중 (🎯)</h4>
+    <p>공격 명중률을 올림. 회피 높은 적 상대에 안정적.</p>
+    <table>
+        <thead><tr><th>접미사</th><th>HIT 보너스</th></tr></thead>
+        <tbody>
+            <tr><td>참새의</td><td>+3</td></tr>
+            <tr><td>까마귀의</td><td>+5</td></tr>
+            <tr><td>매의</td><td>+10</td></tr>
+            <tr><td>독수리의</td><td>+15</td></tr>
+        </tbody>
+    </table>
+
+    <h3>트럼프 마크 옵션 (영웅 등급 전용)</h3>
+    <p>영웅(보라) 등급 장비는 일반 접두사/접미사 외에 이름 끝에 <strong>트럼프 마크 + 숫자(1~5)</strong>가 무작위로 추가로 붙습니다. 각 마크는 고유한 특수 효과를 의미하며, 숫자가 클수록 효과가 강합니다.</p>
+    <table>
+        <thead><tr><th>마크</th><th>의미</th><th>효과 (N = 1~5)</th></tr></thead>
+        <tbody>
+            <tr><td><span class="symbol">♠</span></td><td><strong>스페이드 — 방어 무시</strong></td><td>적 방어력을 추가로 <strong>+N</strong> 차감하고 피해 계산 (접미사 ♠와 합산)</td></tr>
+            <tr><td><span class="symbol">♥</span></td><td><strong>하트 — 생명력 흡수</strong></td><td>입힌 피해의 <strong>+N%</strong>를 자신 HP로 회복 (접미사 ♥와 합산, 전체 상한 30%)</td></tr>
+            <tr><td><span class="symbol">♣</span></td><td><strong>클럽 — 크리티컬 확률</strong></td><td>치명타 확률 <strong>+N%</strong> (LUK 기반 확률에 가산, 전체 상한 50%)</td></tr>
+            <tr><td><span class="symbol">♦</span></td><td><strong>다이아 — 크리티컬 피해</strong></td><td>치명타 발동 시 피해 배수 <strong>+N%</strong> 추가 (기본 1.5배 → 최대 1.55배)</td></tr>
+        </tbody>
+    </table>
+
+    <div class="note">
+        <strong>중첩:</strong> 여러 영웅 장비를 함께 장착하면 같은 마크 효과가 합산됩니다. 동일 마크 위주로 묶어 빌드를 짜면 시너지가 강해집니다. (예: ♦5 × 4개 → 크리티컬 1.7배)
+    </div>
+
+    <h3>크리티컬 (LUK 기반)</h3>
+    <p>크리티컬은 장비 옵션이 아니라 <strong>LUK 스탯</strong>으로 결정됩니다.</p>
+    <ul>
+        <li>치명타 확률 = LUK × 0.6% (최대 50%)</li>
+        <li>치명타 피해 = 1.5배 고정</li>
+        <li>마력각인(전투 — 크리티컬 +5%)으로 추가 가능</li>
+        <li>일부 스킬은 자체 크리티컬 보너스 보유</li>
+    </ul>
+
+    <h3>상태이상</h3>
+    <p>상태이상은 일반 장비 옵션이 아니라 <strong>전설 효과</strong> 또는 <strong>스킬/마력각인</strong>으로 부여됩니다.</p>
+    <table>
+        <thead><tr><th>이름</th><th>효과</th></tr></thead>
+        <tbody>
+            <tr><td><strong>출혈</strong></td><td>매 턴 도트 데미지. 적 공격력 감소 디버프 동반. 누적 가능</td></tr>
+            <tr><td><strong>중독</strong></td><td>매 턴 적 현재 HP의 10% 도트 데미지 + <strong>적 DEF 50% 감소</strong> (3턴)</td></tr>
+            <tr><td><strong>화상</strong></td><td>매 턴 고정 데미지 + 회복 효율 감소</td></tr>
+            <tr><td><strong>빙결</strong></td><td>적 행동 봉쇄. 보스는 보통 면역이며 대체로 약화 디버프 부여</td></tr>
+            <tr><td><strong>기절</strong></td><td>다음 턴 적 공격 무효화</td></tr>
+        </tbody>
+    </table>
+
+    <h3>전설 효과 (전설 등급 전용)</h3>
+    <p>전설 등급 장비는 고유 이름과 강력한 효과를 보유합니다. 도감에서 발견한 전설을 확인할 수 있습니다.</p>
+    <table>
+        <thead><tr><th>이름</th><th>효과</th></tr></thead>
+        <tbody>
+            <tr><td><strong>심연의 이빨</strong></td><td>적 처치 시 누적 카운터 +1. 5 카운트마다 ATK +1. 20 카운트 이상에서 공격 시 출혈 부여</td></tr>
+            <tr><td><strong>뇌신의 손길</strong></td><td>5회 공격마다 뇌격 발동 (250% 데미지 + 마비 1턴)</td></tr>
+            <tr><td><strong>얼어붙은 영혼</strong></td><td>피격 시 10% 확률로 적 2턴 빙결 (빙결 면역 적은 약화 부여)</td></tr>
+            <tr><td><strong>죽음의 속삭임</strong></td><td>전투 시작 시 HP 15% 헌납. 적 처치 시 MP +10 회복</td></tr>
+            <tr><td><strong>별빛의 축복</strong></td><td>HP 30% 이하 시 최대 HP의 25% 회복 + 상태이상 해제 (전투당 1회)</td></tr>
+            <tr><td><strong>월광의 파편</strong></td><td>7라운드 주기. 1-3R ATK/DEF +5%, 4-6R +10%/CRIT +5%, 7R HP 30% 회복</td></tr>
+            <tr><td><strong>깊은 바다의 왕관</strong></td><td>층수가 높을수록 회피 증가 + 함정 피해 감소. 고층에서 선공 + 필중 크리</td></tr>
+            <tr><td><strong>수정의 심장</strong></td><td>사망 시 심연석 3개 소모하여 부활 (HP 50% + 피해감소 50% 3턴). 런당 1회</td></tr>
+        </tbody>
+    </table>
+
+    <h3>장비 슬롯</h3>
+    <p>캐릭터는 7개 슬롯에 장비를 장착할 수 있습니다.</p>
+    <ul>
+        <li><strong>무기</strong></li>
+        <li><strong>투구</strong></li>
+        <li><strong>갑옷</strong></li>
+        <li><strong>장갑</strong></li>
+        <li><strong>장화</strong></li>
+        <li><strong>반지</strong></li>
+        <li><strong>목걸이</strong></li>
+    </ul>
+
+    <h3>전용 장비 (직업 전용무기)</h3>
+    <p>일부 직업은 마을의 <strong>제련소</strong>에서 자신만의 전용 무기를 만들 수 있습니다.</p>
+    <ul>
+        <li>제련소에서 심연석으로 제작하고, 강화·진화로 성장시킬 수 있습니다 (일반 → 전설).</li>
+        <li>전용 무기는 <strong>탐사가 끝나도 사라지지 않고</strong> 다음 탐사에 자동 장착됩니다.</li>
+        <li>장착하면 <strong>스킬을 하나 더 장착</strong>할 수 있고, <strong>직업 고유의 특수 능력(패시브)</strong>이 깨어납니다.</li>
+    </ul>
+
+    <h3>장비 코팅 (영속화)</h3>
+    <p>장비에 특수 코팅을 입히면 <strong>사망 · 탐사 종료에도 사라지지 않습니다.</strong></p>
+    <ul>
+        <li>코팅한 장비는 다음 탐사 시작 시 <strong>부위별 최고 등급 1개씩 자동으로 장착</strong>됩니다.</li>
+        <li><strong>제련소</strong>(마을)에서 장착 중인 장비를 코팅하거나, <strong>휴대용 코팅제</strong>로 탐사 중 발견한 장비를 즉석에서 코팅할 수 있습니다.</li>
+        <li>코팅하지 않은 일반 장비는 탐사가 끝나면 소실됩니다.</li>
+    </ul>
+</section>
+
+<!-- ============================================
+     2. 전투 시스템
+============================================ -->
+<section id="combat">
+    <h2>2. 전투 시스템</h2>
+
+    <h3>자동 전투</h3>
+    <p>탐사 중 모든 전투는 자동으로 진행됩니다. 결과를 보고 캠핑/장비 변경으로 빌드를 조정합니다.</p>
+
+    <h3>피해 계산</h3>
+    <ol>
+        <li><strong>명중 판정</strong>: 공격자 HIT vs 방어자 회피. 명중 실패 시 빗나감 (0 데미지)</li>
+        <li><strong>크리티컬 판정</strong>: LUK × 0.6% (최대 50%). 발동 시 1.5배 데미지</li>
+        <li><strong>피해 계산</strong>: 공격력 - (방어력 - 방어무시)</li>
+        <li><strong>흡혈 적용</strong>: 생흡 % 만큼 자신 HP 회복 (상한 30%)</li>
+        <li><strong>상태이상 적용</strong>: 출혈/중독/화상/빙결/기절 부여 (확률/조건부)</li>
+    </ol>
+
+    <h3>상태이상 규칙</h3>
+    <ul>
+        <li><strong>지속 시간</strong>: 일반적으로 2~3턴</li>
+        <li><strong>중첩</strong>: 출혈/중독은 누적 가능. 화상/빙결/기절은 보통 중첩 X</li>
+        <li><strong>보스 면역</strong>: 일부 보스는 빙결/기절 등에 면역. 대신 "약화" 디버프로 대체</li>
+        <li><strong>해제</strong>: 정화의 결정 또는 일부 전설 효과(별빛의 축복)로 해제</li>
+    </ul>
+
+    <h3>회피 / 방어</h3>
+    <p>회피는 DEX 스탯 + 일부 전설 효과로 추가. DEF는 피해 자체를 감소시키는 별도 스탯입니다.</p>
+</section>
+
+<!-- ============================================
+     3. 마을 / 시설
+============================================ -->
+<section id="village">
+    <h2>3. 마을 / 시설</h2>
+
+    <p>마을은 5단계까지 발전합니다. 레벨업 시 신규 시설이 해금됩니다.</p>
+
+    <h3>통화</h3>
+    <ul>
+        <li><strong>은화</strong> — 탐사 통화. 탐사 중 처치 보상으로 얻으며, 캠핑의 떠돌이 상인에서 아이템·장비 구매에 씁니다. <strong>마을로 돌아오면 0으로 사라집니다</strong>(탐사 한정).</li>
+        <li><strong>골드</strong> — 마을 통화. 대장간 장비 구매, 도구상점 소비 아이템, 여관 침대 등 마을 거래에 씁니다. 영구 보관되며 환전소에서 심연석과 교환할 수 있습니다.</li>
+        <li><strong>심연석</strong> — 핵심 자원. 대장간 리롤, 시설 해금, 신체강화, 스킬 구매 등에 씁니다. 영구 보관되며 환전소에서 골드와 교환할 수 있습니다.</li>
+    </ul>
+
+    <h3>마을 레벨</h3>
+    <table>
+        <thead><tr><th>레벨</th><th>이름</th><th>해금 시설</th></tr></thead>
+        <tbody>
+            <tr><td>1</td><td>천막</td><td>소생진, 환전소, 탐사봇, 제련소*</td></tr>
+            <tr><td>2</td><td>개척지</td><td>대장간, 도구상점, 도서관</td></tr>
+            <tr><td>3</td><td>마을</td><td>여관, 신체강화소</td></tr>
+            <tr><td>4</td><td>도시</td><td>스킬연구소, 광산, 지도 제작소</td></tr>
+            <tr><td>5</td><td>요새</td><td>마력각인소</td></tr>
+        </tbody>
+    </table>
+    <p class="subtitle">* 제련소는 전용무기를 가진 직업(머스킷티어 · 몽크 · 로그 · 매직유저 · 음유시인)에게만 열립니다.</p>
+
+    <h3>주요 시설</h3>
+
+    <h4>소생진</h4>
+    <ul>
+        <li>탐사 시작 시 캐릭터 레벨 강화 (영구)</li>
+        <li>사망/마을 복귀 시 설정된 시작 레벨로 다시 리셋</li>
+        <li>기본 Lv.10까지, 진행도 달성 시 Lv.20까지 확장</li>
+    </ul>
+
+    <h4>환전소</h4>
+    <ul>
+        <li><strong>골드 ↔ 심연석</strong> 교환소</li>
+        <li>심연석 → 골드 시세는 매일 바뀌며, 최근 7일 시세 그래프를 보고 타이밍을 잡을 수 있습니다</li>
+        <li>골드 → 심연석은 고정 환율</li>
+        <li>자주 이용하면 <strong>단골</strong>이 되어 더 유리한 교환율을 받습니다</li>
+    </ul>
+
+    <h4>대장간</h4>
+    <ul>
+        <li>티어별 장비 제작 / 구매 (<strong>골드</strong>)</li>
+        <li><strong>리롤</strong>: 진열 장비를 새로 굴림. 누진 비용 (10/15/20/25/30 심연석)</li>
+    </ul>
+
+    <h4>도구상점</h4>
+    <ul>
+        <li>HP/MP 포션, 정화의 결정, 부활인형, ATK/DEF 부스트, <strong>행운의 부적</strong>, <strong>천사의 가호</strong> 등 소비 아이템 판매 (<strong>골드</strong>)</li>
+        <li>해금 조건 충족 시 점차 상품 확장</li>
+    </ul>
+
+    <div class="note">
+        <strong>단골 시스템:</strong> 대장간 · 도구상점 · 여관 · 환전소를 자주 이용하면 단골 등급이 올라(최대 Lv.10) 가격 할인과 더 유리한 교환율을 받습니다.
+    </div>
+
+    <h4>도서관</h4>
+    <ul>
+        <li><strong>도감</strong> 열람 — 몬스터/보스/장비/고양이 등 발견한 항목 확인</li>
+        <li><strong>고대언어학</strong>: 레벨업 시 탐사에서 마주치는 해독 불가 문헌을 읽을 수 있게 됨</li>
+    </ul>
+
+    <h4>여관</h4>
+    <ul>
+        <li>탐사 시작 전 영구 버프 1회 적용 (다음 탐사 1회 한정)</li>
+        <li><strong>일반 침대</strong> (골드): HP/MP +10%, 랜덤 스탯 +5</li>
+        <li><strong>고급 침대</strong> (골드): 일반 효과 + 함정 무시 10%</li>
+        <li><strong>최고급 침대</strong> (골드): 고급 효과 + 경험치 +10%</li>
+    </ul>
+
+    <h4>신체강화소</h4>
+    <ul>
+        <li>4개 부위 영구 강화 (각 부위 최대 Lv.5)</li>
+        <li>팔 → STR +2 / 레벨</li>
+        <li>다리 → DEX +2 / 레벨</li>
+        <li>몸통 → VIT +2 / 레벨</li>
+        <li>머리 → LUK +2 / 레벨</li>
+    </ul>
+
+    <h4>제련소</h4>
+    <ul>
+        <li><strong>전용 무기 제작</strong>: 심연석 30으로 직업 전용무기를 만듭니다 (일반 등급 기본형)</li>
+        <li><strong>강화</strong>: 최대 +10, 강화 레벨마다 ATK 증가 (비용 15 + 20 × 레벨)</li>
+        <li><strong>진화</strong>: 강화 +10 + 레벨 조건 충족 시 상위 등급으로 (일반→고급 150, →희귀 300, →영웅 600, →전설 1200). 진화 후 강화는 초기화</li>
+        <li><strong>옵션 리롤</strong>: 전용무기의 접두/접미사 변경 (심연석 40, 고급 이상)</li>
+        <li><strong>장비 코팅</strong>: 장착 중인 일반 장비를 코팅해 영구 보존 (등급별 심연석 20~160)</li>
+    </ul>
+    <div class="note">
+        <strong>음유시인</strong>은 삼지창 전용 제련만 제공되며, 일반 장비 코팅 기능은 없습니다.
+    </div>
+
+    <h4>스킬연구소</h4>
+    <ul>
+        <li>심연석으로 직업별 스킬 영구 구매</li>
+        <li>구매한 스킬을 스킬 슬롯에 장착해서 사용</li>
+    </ul>
+
+    <h4>광산</h4>
+    <ul>
+        <li>광부 파견 — 4가지 등급 (일반 / 숙련 / 정예 / 전설)</li>
+        <li>등급에 따라 파견 시간 + 채굴량 + 내구도 차이</li>
+        <li>오프라인에서도 시간 진행. 위젯/노티로 완료 알림</li>
+    </ul>
+
+    <h4>지도 제작소</h4>
+    <ul>
+        <li>단서를 사용해 탐사 층을 미리 해독</li>
+        <li><strong>지도로 제작한 층은 다음 탐사에서 스킵 가능</strong></li>
+    </ul>
+
+    <h4>마력각인소</h4>
+    <ul>
+        <li>3개의 각인 슬롯을 심연석으로 순차 해금 (100 / 250 / 350)</li>
+        <li>슬롯마다 랜덤 능력이 부여되며 리롤로 갱신 가능 (잠긴 슬롯 수에 비례 누진)</li>
+        <li>능력군: 전투(크리티컬·선공·흡혈·스킬 확률·회피·상태이상 부여) / 탐사(함정 감소·상자 보너스·맵 공개 등) / 경제(심연석/골드/XP 보너스, 상점 할인) / 생존(HP·MP 재생·부활·면역·시작 HP 보너스)</li>
+    </ul>
+
+    <h4>탐사봇 (T.F.W / 루카)</h4>
+    <ul>
+        <li>최대 12시간 자동 탐사 (1, 2, 4, 8, 12시간 선택)</li>
+        <li>시간 비례 심연석 보상</li>
+        <li>취소 시 진행 시간 비례 보상에 30% 패널티 적용</li>
+    </ul>
+</section>
+
+<!-- ============================================
+     4. 탐사 / 캠핑
+============================================ -->
+<section id="exploration">
+    <h2>4. 탐사 / 캠핑</h2>
+
+    <h3>층 진행</h3>
+    <p>각 층은 일반 몹과 보스로 구성됩니다. 보스 처치 시 층 클리어 + 보상 + 캠핑 선택지가 열립니다.</p>
+
+    <h3>캠핑</h3>
+    <p>층 클리어 후 등장하는 휴식 단계. 다음 중 선택:</p>
+    <ul>
+        <li><strong>장비 정리</strong>: 인벤토리 확인 + 장착 변경</li>
+        <li><strong>소비 아이템 사용</strong>: 부스트, 행운의 부적, 천사의 가호 등</li>
+        <li><strong>떠돌이 상인</strong>: 임시 상품 (장비, 소비 아이템) — <strong>은화</strong>로 구매</li>
+        <li><strong>다음 층 진행</strong>: 곧장 다음 보스로</li>
+    </ul>
+
+    <h4>주요 소비 아이템</h4>
+    <ul>
+        <li><strong>HP 포션 / MP 포션</strong>: 사용 시 즉시 사용이 아니라, 조건에 따라 <strong>전투 후 자동 회복</strong> (HP 30% / MP 50%)</li>
+        <li><strong>행운의 부적</strong>: 사용 후 <strong>다음 1층 동안 장비 드랍률 2배</strong> (도구상점 구매)</li>
+        <li><strong>천사의 가호</strong>: 사용 후 <strong>다음 보스 / 챔피언전에서 3턴간 받는 피해 무효</strong> (도구상점 구매)</li>
+        <li><strong>정화의 결정</strong>: 해당 층 상태이상 면역</li>
+        <li><strong>부활 인형</strong>: 사망 시 자동 부활</li>
+        <li><strong>ATK / DEF 부스트</strong>: 일정 층 동안 능력 강화</li>
+        <li><strong>휴대용 코팅제</strong>: 탐사 중 발견한 장비를 즉석에서 코팅해 영구 보존 (도구상점 구매, 심연석 150)</li>
+    </ul>
+
+    <div class="note">
+        <strong>부스트 재적용:</strong> 행운의 부적 / ATK / DEF 부스트는 발동 중에는 다시 못 씁니다. 만료 후 재적용 가능.
+    </div>
+
+    <h3>마을 복귀 시 장비 소실</h3>
+    <p class="warning"><strong>핵심 규칙:</strong> 탐사 도중 마을로 돌아오면 — 사망, 자발적 포기, 완주, 엔딩 — <strong>코팅하지 않은 장비는 모두 소실</strong>됩니다.</p>
+    <p><strong>코팅한 장비</strong>와 <strong>전용 무기</strong>는 예외로 사라지지 않고, 다음 탐사 시작 시 자동으로 다시 장착됩니다. 남기고 싶은 장비는 제련소에서 코팅하거나, 탐사 중이라면 휴대용 코팅제로 코팅해 두세요.</p>
+
+    <h3>심연석 획득</h3>
+    <ul>
+        <li>몹 처치: 소량</li>
+        <li>보스 처치: 층별 보상 + 첫 클리어 보너스</li>
+        <li>탐사 종료 시: 누적된 심연석을 마을 통장에 적립</li>
+    </ul>
+
+    <h3>심연석 캡 (저장 한도)</h3>
+    <p>마을 레벨에 따라 보유 가능한 심연석 상한이 있습니다. 캡 초과 시 잉여분은 버려집니다. 마을 레벨업으로 캡 확장.</p>
+</section>
+
+<!-- ============================================
+     5. 기타 시스템
+============================================ -->
+<section id="misc">
+    <h2>5. 기타 시스템</h2>
+
+    <h3>일일 접속 보상</h3>
+    <p>매 5일 누적 접속마다 심연석 +100 자동 지급. 계정 단위(모든 슬롯 공유).</p>
+
+    <h3>걸음 보상 (HealthKit 연동)</h3>
+    <ul>
+        <li>건강 앱 데이터 연동 시 활성</li>
+        <li>1,000보마다 심연석 +1 (하루 최대 10개)</li>
+        <li>설정에서 권한 허용 필요</li>
+    </ul>
+
+    <h3>후원 (IAP)</h3>
+    <ul>
+        <li>인앱 결제로 심연석 100개 즉시 지급</li>
+        <li>1회성 결제 (영구 권리)</li>
+        <li>결제 후 보상 누락 시 <strong>설정 → 후원 보상 복구</strong> 버튼으로 자가 복구</li>
+    </ul>
+
+    <h3>위젯</h3>
+    <ul>
+        <li>광산 위젯: 광부 진행 상황 + 심연석 잔액 + 탐사봇 상태</li>
+        <li>홈 화면에 추가해 한눈에 진행 확인</li>
+    </ul>
+
+    <h3>다이나믹 아일랜드 / Live Activity</h3>
+    <p>마을 공사 진행 중일 때 다이나믹 아일랜드 + 잠금화면에 진행도 표시. 자동 활성.</p>
+
+    <h3>알림 (Notification)</h3>
+    <ul>
+        <li>광부 파견 완료</li>
+        <li>탐사봇 완료</li>
+        <li>마을 공사 완료</li>
+    </ul>
+</section>
+
+</body>
+</html>
