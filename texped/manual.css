@@ -1,0 +1,298 @@
+/* 텍스페드 매뉴얼 스타일 */
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #111;
+    background: #fff;
+    word-break: keep-all;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    padding: 16px 16px 80px;
+}
+
+/* === 헤더 / 목차 === */
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 8px;
+    color: #6d28d9;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #6b7280;
+    margin: 0 0 24px;
+}
+
+nav.toc {
+    background: #f4f4f5;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 32px;
+}
+
+nav.toc h2 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 12px;
+    color: #4b5563;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+nav.toc ol {
+    margin: 0;
+    padding-left: 24px;
+}
+
+nav.toc li {
+    margin: 6px 0;
+}
+
+nav.toc a {
+    color: #6d28d9;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* === 섹션 === */
+
+section {
+    margin-bottom: 36px;
+    padding-top: 16px;
+}
+
+section h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #c084fc;
+    color: #6d28d9;
+}
+
+section h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 24px 0 8px;
+    color: #111;
+}
+
+section h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 16px 0 6px;
+    color: #1f2937;
+}
+
+p {
+    margin: 8px 0;
+}
+
+/* === 강조 박스 === */
+
+.note {
+    background: #eef2ff;
+    border-left: 4px solid #6366f1;
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+.warning {
+    background: #fef3c7;
+    border-left: 4px solid #f59e0b;
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+.tip {
+    background: #d1fae5;
+    border-left: 4px solid #10b981;
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+/* === 키워드 / 코드 === */
+
+code, .key {
+    background: #f4f4f5;
+    color: #6d28d9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.92em;
+    font-family: "SF Mono", Menlo, monospace;
+}
+
+.symbol {
+    display: inline-block;
+    font-size: 1.2em;
+    width: 24px;
+    text-align: center;
+}
+
+/* === 목록 === */
+
+ul, ol {
+    margin: 8px 0;
+    padding-left: 22px;
+}
+
+li {
+    margin: 4px 0;
+}
+
+li strong {
+    color: #6d28d9;
+}
+
+/* === 표 === */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #d4d4d8;
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #f4f4f5;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+tr:nth-child(even) td {
+    background: #fafafa;
+}
+
+/* === 회차/희귀도 색상 === */
+
+.r-common { color: #6b7280; }
+.r-uncommon { color: #16a34a; }
+.r-rare { color: #2563eb; }
+.r-epic { color: #9333ea; }
+.r-legendary { color: #ea580c; }
+
+/* === 다크 모드 === */
+
+/* === 다크 모드 (앱 DS 팔레트에 맞춤 — 앱은 항상 다크) === */
+@media (prefers-color-scheme: dark) {
+    html, body {
+        background: #06081A;   /* DS.background — 깊은 심연 */
+        color: #E8E6F0;        /* DS.text — 보라빛 화이트 */
+    }
+
+    h1 {
+        color: #9F90F5;        /* 밝은 심연석 보라 */
+    }
+
+    .subtitle {
+        color: #8E8EB0;        /* DS.textSecondary */
+    }
+
+    nav.toc {
+        background: #111533;   /* DS.surface */
+        border: 1px solid #1C2248;
+    }
+
+    nav.toc h2 {
+        color: #8E8EB0;
+    }
+
+    nav.toc a {
+        color: #9F90F5;
+    }
+
+    section h2 {
+        color: #9F90F5;
+        border-bottom-color: #7B68EE;   /* DS.primary */
+    }
+
+    section h3 {
+        color: #E8E6F0;
+    }
+
+    section h4 {
+        color: #C5C2DA;
+    }
+
+    .note {
+        background: #14183A;
+        border-left-color: #7B68EE;      /* DS.primary */
+        color: #E8E6F0;
+    }
+
+    .warning {
+        background: #2A2410;
+        border-left-color: #FFD43B;      /* DS.gold */
+        color: #E8E6F0;
+    }
+
+    .tip {
+        background: #0E2A1E;
+        border-left-color: #51CF66;      /* DS.success */
+        color: #E8E6F0;
+    }
+
+    code, .key {
+        background: #1C2248;   /* DS.surfaceHigh */
+        color: #9F90F5;
+    }
+
+    th, td {
+        border-color: #2A2F52;
+    }
+
+    th {
+        background: #1C2248;   /* DS.surfaceHigh */
+        color: #E8E6F0;
+    }
+
+    tr:nth-child(even) td {
+        background: #0C0F26;
+    }
+
+    li strong {
+        color: #9F90F5;
+    }
+
+    a {
+        color: #00D2FF;        /* DS.accent */
+    }
+
+    /* 희귀도 색 — 앱 등급 색과 일치 */
+    .r-common { color: #8E8EB0; }
+    .r-uncommon { color: #51CF66; }
+    .r-rare { color: #00D2FF; }
+    .r-epic { color: #B084FC; }
+    .r-legendary { color: #FFD43B; }
+}
+
+/* === 앵커 스크롤 보정 === */
+section[id] {
+    scroll-margin-top: 12px;
+}
