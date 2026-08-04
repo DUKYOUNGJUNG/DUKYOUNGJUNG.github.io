@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-06-18",
+  "updated": "2026-08-04",
   "apps": [
     {
       "id": "simyeontamsa",
@@ -64,6 +64,15 @@
       "appStoreId": "6776623002",
       "urlScheme": "nanocity",
       "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a6/f4/b5/a6f4b51c-7441-9126-fc1c-2aea2bd165f3/AppIcon-1x_U007ephone-0-1-85-220-0.png/512x512bb.jpg"
+    },
+    {
+      "id": "bonmun",
+      "name": "본문까지",
+      "tagline": "제목과 본문의 차이를 알려주는 뉴스 앱",
+      "appStoreUrl": "https://apps.apple.com/app/id6790127521",
+      "appStoreId": "6790127521",
+      "urlScheme": "checknews",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5a/25/b9/5a25b985-2f90-f958-7487-fb04ad34e6e0/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg"
     }
   ]
 }
