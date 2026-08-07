@@ -1,16 +1,24 @@
 {
   "version": 1,
-  "latest_version": "1.0.8",
+  "latest_version": "1.0.9",
   "force_update": false,
   "appstore_url": "https://apps.apple.com/app/id6761684776",
   "notices": [
+    {
+      "id": "2026-08-07-update",
+      "title": "1.0.9 업데이트",
+      "date": "2026-08-07",
+      "category": "patch",
+      "body_url": "2026-08-07-update.html",
+      "important": true
+    },
     {
       "id": "2026-07-31-preview",
       "title": "업데이트 미리보기",
       "date": "2026-07-31",
       "category": "event",
       "body_url": "2026-07-31-preview.html",
-      "important": true
+      "important": false
     },
     {
       "id": "2026-07-21-update",
