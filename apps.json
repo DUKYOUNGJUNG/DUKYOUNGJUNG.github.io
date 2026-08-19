@@ -1,7 +1,16 @@
 {
   "version": 1,
-  "updated": "2026-08-04",
+  "updated": "2026-08-19",
   "apps": [
+    {
+      "id": "mungstrike",
+      "name": "멍때리기",
+      "tagline": "때릴수록 시원한 방치형 클리커",
+      "appStoreUrl": "https://apps.apple.com/app/id6800674906",
+      "appStoreId": "6800674906",
+      "urlScheme": "mungstrike",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1d/ae/42/1dae4229-1429-a079-43c7-19d1f7aa3744/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+    },
     {
       "id": "simyeontamsa",
       "name": "심연탐사",
