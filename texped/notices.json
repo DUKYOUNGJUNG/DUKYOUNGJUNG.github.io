@@ -5,6 +5,14 @@
   "appstore_url": "https://apps.apple.com/app/id6761684776",
   "notices": [
     {
+      "id": "2026-09-18-preview",
+      "title": "업데이트 미리보기",
+      "date": "2026-09-18",
+      "category": "event",
+      "body_url": "2026-09-18-preview.html",
+      "important": false
+    },
+    {
       "id": "2026-08-19-update",
       "title": "1.0.10 업데이트",
       "date": "2026-08-19",
